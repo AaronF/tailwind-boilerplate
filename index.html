@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./assets/dist/css/main.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container mx-auto px-4">
+		<br><br>
+	
+		<h1 class="mb-0 text-blue-400">This is a h1</h1>
+		<h2 class="mb-0 text-blue-500">This is a h2</h2>
+		<h3 class="mb-0 text-blue-600">This is a h3</h3>
+		<h4 class="mb-0 text-blue-700">This is a h4</h4>
+		<h5 class="mb-0 text-blue-800">This is a h5</h5>
+		<h6 class="text-blue-900">This is a h6</h6>
+	
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in laoreet diam. Nam sed leo sagittis, mattis nisl in, consectetur eros. Praesent eget facilisis erat, ut finibus erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et efficitur lacus, congue auctor nulla.</p>
+		
+		<p>Nullam eget sem sit amet nunc ultrices auctor a vitae augue. Duis quis egestas nibh, ut blandit enim. Pellentesque finibus tincidunt venenatis. Etiam laoreet risus diam, nec bibendum dolor venenatis eu. Fusce feugiat urna non enim ornare, mattis malesuada nulla euismod. Etiam convallis accumsan ornare. Nunc commodo tristique elit sed pharetra.</p>
+	
+		<br><br>
+	
+		<h3 class="text-blue-600">Responsive test (resize your browser)</h3>
+		<p class="sm:opacity-25">I appear below <span class="text-red-500">-sm</span>!</p>
+		<p class="md:opacity-25">I appear below <span class="text-red-500">-md</span>!</p>
+		<p class="lg:opacity-25">I appear below <span class="text-red-500">-lg</span>!</p>
+		<p class="xl:opacity-25">I appear below <span class="text-red-500">-xl</span>!</p>
+		<p class="2xl:opacity-25">I appear below <span class="text-red-500">-2xl</span>!</p>
+		<p>I'm always here 👋</p>
+	
+		<br><br>
+	
+		<div class="c-alert c-alert--success">
+			<p>This is a success alert!</p>
+		</div>
+		<div class="c-alert c-alert--warning">
+			<p>This is a warning alert!</p>
+		</div>
+		<div class="c-alert c-alert--danger">
+			<p>This is an error alert!</p>
+		</div>
+	
+		<br><br>
+	
+		<div class="flex">
+			<button class="c-button bg-red-600">Button!</button>
+			<button class="c-button bg-green-500">...and another one!</button>
+			<button class="c-button" disabled>Disabled Button!</button>
+			<button class="c-button open-modal" data-target="example_modal">This one opens a modal!</button>
+		</div>
+	
+		<br><br>
+	
+		<form action="" class="max-w-md">
+			<h3 class="mb-4 text-4xl font-bold text-blue-600">Example form</h3>
+	
+			<div class="grid md:grid-cols-2 gap-4">
+				<label>
+					<span>Left</span>
+					<input type="text" name="" id="" placeholder="Placeholder">
+				</label>
+	
+				<label>
+					<span>Right</span>
+					<input type="text" name="" id="" placeholder="Placeholder">
+				</label>
+			</div>
+	
+			<label>
+				<span>Text</span>
+				<input type="text" name="" id="">
+			</label>
+	
+			<label>
+				<span>Password</span>
+				<input type="password" name="" id="">
+			</label>
+	
+			<label>
+				<span>Select</span>
+				<select name="" id="">
+					<option value="">Option 1</option>
+					<option value="">Option 2</option>
+					<option value="">Option 3</option>
+				</select>
+			</label>
+	
+			<div class="block w-full">
+				<label class="inline-flex items-center">
+					<input type="checkbox" name="" id="tos">
+					<span class="ml-2">I accept to sign my life away</span>
+				</label>
+			</div>
+	
+			<div>
+				<input type="submit" value="Submit" class="c-button">
+			</div>
+		</form>
+	
+		<br><br>
+	</div>
+
+	<div class="c-modal" id="example_modal">
+		<div class="c-modal__overlay"></div>
+		<div class="c-modal__content">
+			<div class="c-modal__content__title">
+				<h2 class="text-5xl font-bold text-blue-500">This is a modal!</h2>
+				<button class="c-modal__close"><span class="sr-only">Close</span></button>
+			</div>
+	
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a blandit mi, at tristique nunc. Praesent justo leo, feugiat ut rhoncus eget, pharetra non ligula. Mauris vulputate ante pharetra, fermentum magna vitae, gravida turpis. Sed ac ex hendrerit, porttitor ante viverra, feugiat nibh. Curabitur ante risus, aliquam nec neque laoreet, ornare porttitor purus. In hac habitasse platea dictumst. Sed venenatis est id sollicitudin facilisis. Etiam a nisi sed lectus tempor facilisis. Sed ac metus eu arcu vulputate ullamcorper. Morbi venenatis mi et lacus semper laoreet. Phasellus molestie eros a ipsum dignissim condimentum. Praesent arcu nulla, luctus id vestibulum a, mattis vitae tortor.</p>
+	
+			<p>Donec convallis vel mauris id elementum. Maecenas faucibus ut elit ac lobortis. Aliquam nec varius metus. Sed auctor ornare ante, vel sollicitudin quam hendrerit pulvinar. Duis facilisis odio eu nisl venenatis dictum eu et purus. Donec purus augue, condimentum hendrerit ultricies eget, tincidunt non est. Quisque sit amet leo dolor. Aliquam id mi vestibulum, pharetra ex sit amet, semper dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec id ornare lorem. Nam porta, neque mollis condimentum bibendum, turpis ipsum rutrum orci, non interdum odio augue eget massa. Fusce at orci quis elit accumsan mollis vel eu lacus. Nullam feugiat mi massa, et ullamcorper ipsum suscipit vitae.</p>
+		</div>
+	</div>
+
+	<script src="./assets/dist/js/c-modal.min.js"></script>
+	<script src="./assets/dist/js/main.min.js"></script>
+</body>
+</html>

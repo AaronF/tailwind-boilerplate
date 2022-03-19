@@ -1,0 +1,43 @@
+{
+  "name": "tailwind-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-js": "babel src/js --out-dir dist/js --out-file-extension .min.js",
+    "watch-js": "babel src/js --out-dir dist/js --out-file-extension .min.js --watch",
+    "build-css": "npx tailwindcss -i src/css/main.css -o dist/css/main.css",
+    "watch-css": "npx tailwindcss -i src/css/main.css -o dist/css/main.css --watch",
+    "build": "concurrently \"npm run build-js\" \"npm run build-css\"",
+    "watch": "concurrently \"npm run watch-js\" \"npm run watch-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "babel": {
+    "ignore": [
+      "**/*.min.js"
+    ],
+    "comments": false,
+    "presets": [
+      [
+        "minify",
+        {
+          "keepClassName": true,
+          "builtIns": false
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0",
+    "@tailwindcss/forms": "^0.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-preset-minify": "^0.5.1",
+    "concurrently": "^6.0.0",
+    "tailwindcss": "^3.0.23"
+  }
+}
